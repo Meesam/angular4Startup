@@ -11,7 +11,7 @@ export class BlogService {
   }
 
   getPosts(){
-     return this.http.get('http://staffline-qa.compunnel.com/api/users/lookupdata')
+     return this.http.post('http://10.1.9.7:3000/api/accounts/signin',{userName:'apeksha.agrawal@compunnel.in',password:'Abcd@123'})
          .map(res=>res.json());
   }
 

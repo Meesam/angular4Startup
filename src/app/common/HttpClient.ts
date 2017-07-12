@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers} from '@angular/http';
 
-const token="U3RhZmZMaW5lQDIwMTc6ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmtZWFJoSWpwN0ltVnRjR3h2ZVdWbFJHVjBZV2xzYzBsa0lqb3hNRGs1ZlN3aWFXRjBJam94TkRrNU9ETTNNelF4TENKbGVIQWlPakUwT1RrNU1qTTNOREY5LjdzS1JabUwzeHRiczFlS293NHZNM0pFaHQxc3BjWmxEcTFtVnZFZzFBa0k=";
+const token="U3RhZmZMaW5lQDIwMTc=";
 
 @Injectable()
 export class HttpClient {
