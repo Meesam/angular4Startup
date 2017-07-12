@@ -19,7 +19,8 @@ export class UserComponent implements OnInit {
   ngOnInit() {
     this.UserName="Meesam";
     this.blogService.getPosts().subscribe((post)=>{
-       this.Post=post;
+       console.log('post ' , post);
+        this.Post=post;
     })
   }
 

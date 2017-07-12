@@ -9,6 +9,7 @@ import { UserComponent } from './components/user/user.component';
 import { AboutComponent } from './components/about/about.component';
 
 import {BlogService} from './services/blog.service';
+import {HttpClient} from './common/HttpClient';
 
 const appRoutes:Routes=[
   {path:'home',component:UserComponent},
@@ -37,7 +38,7 @@ const appRoutes:Routes=[
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [BlogService],
+  providers: [HttpClient,BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
