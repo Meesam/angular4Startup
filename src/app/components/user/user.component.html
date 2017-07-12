@@ -1,0 +1,21 @@
+<main>
+  <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+      <div class="col-xs-12 col-sm-9">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+          <li class="breadcrumb-item active">Courses</li>
+        </ol>
+        <div class="card" *ngFor="let p of Post">
+          <div class="card-block">
+            <h4 class="card-title">{{p.title}}</h4>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">{{p.body}}</p>
+            <a href="#" class="card-link">Vew Detail</a>
+            <input type="button" class="btn btn-danger" value="Delete">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
